@@ -21,3 +21,4 @@ This step is commented out, but it suggests that you can proceed with building r
 Conclusion
 Based on the p-values obtained from statistical analysis, it is concluded that danceability, speechiness, and possibly valence have a statistically significant difference between high-popularity and low-popularity songs. These attributes may play a more crucial role in determining the popularity of songs. On the other hand, attributes like energy, acousticness, instrumentalness, and liveness do not show significant differences in their values between high and low popularity songs.
 
+code:popularity.py
