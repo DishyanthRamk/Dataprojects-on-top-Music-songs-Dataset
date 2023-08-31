@@ -1,0 +1,23 @@
+Analysis of Attributes Impact on Song Popularity
+Introduction
+This project aims to analyze the impact of various attributes, including danceability, valence, energy, acousticness, instrumentalness, liveness, and speechiness, on the popularity of songs. The popularity is measured using factors such as the number of streams, presence in Spotify charts, and inclusion in playlists. The goal is to identify which attributes play a crucial role in determining song popularity and which attributes have a lower impact.
+ Steps and Analysis
+Step 1: Load the Dataset
+The dataset is loaded using the `pd.read_csv` function from the pandas library. The dataset contains information about songs, including their attributes and popularity indicators. The dataset's path is specified in `dataset_path`.
+Step 2: Exploratory Data Analysis (EDA)
+In this step, the distribution of the `streams` attribute is visualized using a histogram. This helps us understand the distribution of song popularity based on the number of streams.
+Step 3: Correlation Analysis
+A correlation matrix is calculated to find the relationships between selected attributes and popularity indicators. Correlation measures how two variables change together, and this analysis helps identify which attributes might be related to popularity.
+Step 4: Visualization of Correlation Matrix
+The correlation matrix is visualized using a heatmap. This heatmap helps us understand the strength and direction of relationships between attributes and popularity indicators. Positive values indicate positive correlation, negative values indicate negative correlation, and the color intensity represents the strength of correlation.
+Step 5: Statistical Analysis
+This step involves dividing songs into high-popularity and low-popularity categories based on a popularity threshold (the median value of streams). T-tests are performed to compare attribute values between high and low popularity songs. The calculated p-values indicate whether the differences in attribute values are statistically significant.
+Step 6: Visualization of Attribute Differences
+Violin plots are used to visualize the distribution of attribute values for high and low popularity songs. Violin plots show the density of data, helping us see how attribute values differ between the two groups.
+Step 7: Visualization of Attribute Significance
+A bar chart is created to show the p-values for different attributes. This chart helps us understand which attributes have statistically significant differences between high and low popularity songs. The use of a logarithmic scale enhances visualization of small p-values.   
+Step 8: Model Building (Optional)
+This step is commented out, but it suggests that you can proceed with building regression models to predict popularity based on attributes. This step is optional and could be the next step if you want to delve deeper into predicting popularity.
+Conclusion
+Based on the p-values obtained from statistical analysis, it is concluded that danceability, speechiness, and possibly valence have a statistically significant difference between high-popularity and low-popularity songs. These attributes may play a more crucial role in determining the popularity of songs. On the other hand, attributes like energy, acousticness, instrumentalness, and liveness do not show significant differences in their values between high and low popularity songs.
+
