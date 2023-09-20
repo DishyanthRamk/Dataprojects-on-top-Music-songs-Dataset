@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import re
 
 # Load the dataset
-dataset_path = 'C:/Users/Dishu/Desktop/sample project/New folder/dataset/spotify-2023.csv' # Replace with the actual path to your dataset
+dataset_path = 'spotify-2023.csv' # Replace with the actual path to your dataset
 data = pd.read_csv(dataset_path, encoding='latin1')
 # Define a function to extract numerical values from strings
 def extract_numeric(value):
